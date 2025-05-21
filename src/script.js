@@ -1,17 +1,14 @@
 let imgBox  = document.querySelector('.img-box')
 let imgWrap = document.querySelector('.img-wrap')
+let orginalImg = document.querySelector('#orginalImg')
 
+orginalImg.style.width = imgBox.offsetWidth + "px"
 
 
 
 
 var leftSpace = imgBox.offsetLeft;
 
-// imgBox.addEventListener("mousemove", (event)=> {
-//     let boxWidth = (event.pageX - leftSpace) + "px"
-//     imgWrap.computedStyleMap.width = boxWidth;
-//     console.log(boxWidth)
-// })
 
 
 imgBox.onmousemove = function(e){
@@ -19,4 +16,3 @@ imgBox.onmousemove = function(e){
     imgWrap.style.width = boxWidth
     console.log(boxWidth)
 }
-// onmousemove()
